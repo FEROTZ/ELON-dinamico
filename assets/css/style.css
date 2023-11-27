@@ -7734,6 +7734,10 @@ template {
 [hidden] {
   display: none !important; }
 
+.hidden{
+  display: none!important;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -20338,6 +20342,9 @@ div.tagsinput {
     text-decoration: underline; }
 
 /* Navbar */
+.navbar-survey{
+  left: 0!important;
+}
 .navbar {
   font-weight: normal;
   background: #161616;
@@ -21131,5 +21138,29 @@ div.tagsinput {
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1; }
+
+.logo-elon{
+  max-width: 70vw;
+  max-height: 10vh; }
+  @media (min-width: 576px) {
+  .logo-elon{
+    max-width: 60vw;
+    max-height: 100%;
+  } }
+  @media (min-width: 768px) {
+  .logo-elon{
+    /* max-width: 70vw;
+    max-height: 10vh; */
+  } }
+  @media (min-width: 992px) {
+  .logo-elon{
+    max-width: 70vw;
+    max-height: 10vh;
+  } }
+  @media (min-width: 1200px) {
+  .logo-elon{
+    max-width: 70vw;
+    max-height: 10vh;
+  } }
 
 /*# sourceMappingURL=maps/style.css.map */

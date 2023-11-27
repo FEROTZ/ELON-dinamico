@@ -1,0 +1,80 @@
+#hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Position the hamburger button to the right */
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #FFF; /* Change the hamburger icon color to white */
+    margin-bottom: 10px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998;
+    overflow-y: auto; /* Permite desplazarse si el contenido es más largo que la pantalla */
+    padding-top: 20px; /* Espacio para el logo */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+#closeMenu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#logoContainer {
+    text-align: center;
+    margin: 10vh 0 20px 0;
+}
+
+#logoContainer img {
+    max-width: 80%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+#menu.active {
+    opacity: 1;
+}
+
+#menu ul {
+    padding: 10px 0;
+}
+
+#menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+#menu li:hover {
+    background-color: #161616;
+    color: #24fff7
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
