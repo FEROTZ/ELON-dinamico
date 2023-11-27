@@ -78,3 +78,35 @@
     color: #fff;
     text-decoration: none;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px ) {
+    #menu {
+        width: 100vw;
+    }
+
+    #menu ul {
+        text-align: center;
+    }
+
+    #logoContainer {
+        margin: 7vh 0 20px 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #menu {
+        width: 80%;
+    }
+    #menu ul {
+        text-align: start;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #menu {
+        width: 30%;
+    }
+}
+

@@ -8,11 +8,6 @@ hamburger.addEventListener("click", function () {
     hamburger.setAttribute("hidden", "");
 });
 
-// closeMenu.addEventListener("click", function () {
-//     menu.classList.remove("active");
-//     hamburger.removeAttribute("hidden");
-// });
-
 document.addEventListener("click", function (event) {
     if(!menu.contains(event.target) && !hamburger.contains(event.target) || closeMenu.contains(event.target)) {
         menu.classList.remove("active");
