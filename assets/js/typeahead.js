@@ -23,7 +23,7 @@
   };
 
   var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-    'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+    'Colorado', 'Connecticut', 'Delaware', 'Esta es una opción', 'Florida', 'Georgia', 'Hawaii',
     'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
     'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
     'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
@@ -32,6 +32,8 @@
     'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
     'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
   ];
+
+  var schools = ['Express Learning Online', 'Centro Educativo Integral Delta', 'Otro', 'No aplica'];
 
   $('#the-basics .typeahead').typeahead({
     hint: true,
@@ -42,19 +44,19 @@
     source: substringMatcher(states)
   });
   // constructs the suggestion engine
-  var states = new Bloodhound({
+  var schools = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     // `states` is an array of state names defined in "The Basics"
-    local: states
+    local: schools
   });
 
-  $('#bloodhound .typeahead').typeahead({
+  $('#school .typeahead').typeahead({
     hint: true,
     highlight: true,
     minLength: 1
   }, {
-    name: 'states',
-    source: states
+    name: 'schools',
+    source: schools
   });
 })(jQuery);
