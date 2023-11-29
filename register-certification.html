@@ -27,7 +27,7 @@
 
 <body>
 	<!-- START sidebar.html -->
-	<button id="hamburger">
+	<!-- <button id="hamburger">
 		<span></span>
 		<span></span>
 		<span></span>
@@ -51,13 +51,21 @@
 				<li>Contacto</li>
 			</a>
 		</ul>
-	</div>
+	</div> -->
+	<nav class="navbar-elon p-0 fixed-top d-flex flex-row">
+		<div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch justify-content-center">
+			<img src="./assets/images/logo-elon-x.png" alt="" srcset="">
+		</div>
+	</nav>
 	<!-- END sidebar.html -->
-	<div class="main-panel" style="padding-top: 0!important;">
+	<div class="main-panel">
 		<div class="content-wrapper">
 			<div class="row">
-				<div class="col-12 grid-margin stretch-card">
+				<div class="col-12 grid-margin stretch-card p-5">
 					<div class="card">
+						<img src="./assets/images/dashboard/survey.jpg" alt="" class="card-img-top">
+						<div class="card-header">
+						</div>
 						<div class="card-body">
 							<h1 class="card-title">Registro de aspirantes para certificaciones</h1>
 							<p class="card-description">
@@ -67,43 +75,91 @@
 							</p>
 							<form class="forms-sample">
 								<div class="form-group">
-									<label>Nombre de tu escuela de inglés o del profesor que te sugirió certificarte.</label>
+									<label>Nombre de tu escuela de inglés o del profesor que te sugirió
+										certificarte.</label>
 									<div id="school">
-										<input class="typeahead" type="text" placeholder="Express learning online">
+										<input class="typeahead" type="text" name="reference" placeholder="Express learning online" aria-describedby="referenceHelpBlock" required>
+										<small id="referenceHelpBlock" class="form-text text-muted">
+											Si lo estas llenando por iniciativa propia, escribe "No aplica".
+										</small>
 									</div>
 								</div>
 								<div class="form-group">
 									<label>¿Cómo te enteraste de las certificaciones de Express Learning Online?</label>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">WhatsApp</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Facebook</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Instagram</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Página web</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Tik tok</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Volantes</label>
-									</div>
-									<div class="form-check">
-										<label class="form-check-label"><input type="checkbox" class="form-check-input">Recomendación de un conocido</label>
+									<div class="radio-group">
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="WhatsApp" value="WhatsApp">WhatsApp
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Facebook" value="Facebook">Facebook
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Instagram" value="Instagram">Instagram
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Página web" value="Página web">Página web
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Tik-tok" value="Tik tok">Tik tok
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Volantes" value="Volantes">Volantes
+											</label>
+										</div>
+										<div class="form-check">
+											<label class="form-check-label"><input type="radio"
+													class="form-check-input" name="recommendation"
+													id="Recommendation" value="Recommendation">Recomendación de un conocido</label>
+										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="name">Nombre</label>
-									<input type="text" class="form-control" id="name" placeholder="Nombre">
+									<label for="study-history">¿Has estudiado inglés en Express Learning Online?</label>
+									<select class="form-control" id="study-history" name="study-history">
+										<option>Sí</option>
+										<option>No</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="paternal-surname">Apellido paterno</label>
+									<input type="text" class="form-control" id="paternal-surname" name="paternal-surname" placeholder="Apellido paterno" required>
+								</div>
+								<div class="form-group">
+									<label for="maternal-surname">Apellido materno</label>
+									<input type="text" class="form-control" id="maternal-surname" name="maternal-surname" placeholder="Apellido materno" required>
+								</div>
+								<div class="form-group">
+									<label for="name">Nombre(s)</label>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
 								</div>
 								<div class="form-group">
 									<label for="email">Correo electrónico</label>
 									<input type="email" class="form-control" id="email"
 										placeholder="Correo electrónico">
+								</div>
+								<div class="form-group">
+									<label for="phone">Teléfono celular</label>
+									<input type="text" class="form-control" id="phone" placeholder="Numero telefónico" aria-describedby="phoneHelpBlock" required>
+									<small id="phoneHelpBlock" class="form-text text-muted">
+										El número de teléfono debe de contar con WhatsApp.
+									</small>
 								</div>
 								<div class="form-group">
 									<label for="exampleSelectGender">Gender</label>
@@ -157,7 +213,7 @@
 	<!-- endinject -->
 	<!-- Custom js for this page -->
 	<script src="assets/js/dashboard.js"></script>
-	<script src="assets/js/menu.js"></script>
+	<!-- <script src="assets/js/menu.js"></script> -->
 	<script src="assets/js/typeahead.js"></script>
 	<!-- End custom js for this page -->
 
