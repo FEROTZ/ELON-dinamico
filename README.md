@@ -1,73 +1,66 @@
-<table>
-  <tr>
-    <td>
-      <a href="https://www.bootstrapdash.com/demo/corona-free/jquery/template/index.html" target="_blank"><img src="preview.jpg"></a>
-       <h3>Corona-free</h3>
-    </td>
-  </tr>
-</table>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<h1>CoronaAdmin-Free-Admin-Template</h1>
-Corona Admin is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Corona Admin is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems, project management systems, CMS or CRM.
+## About Laravel
 
-Although the template has a design like none other, it is easily customizable to suit your requirements. Corona Admin comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-<h1>Credits:</h1>
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- Bootstrap 4
-- Material Design Icons
-- jQuery
-- Gulp
-- Chart.js
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-<h1>Browser Support:</h1>
+## Learning Laravel
 
-Corona Admin is designed to work flawlessly with all the latest and modern web browsers.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-- Chrome (latest)
-- FireFox (latest)
-- Safari (latest)
-- Opera (latest)
-- IE10+
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-<h1>License Information:</h1>
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Corona Admin is released under MIT license. Corona Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
+## Laravel Sponsors
 
-<h1>How to use Corona Admin?</h1>
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/corona-free-dark-bootstrap-admin-template.git in you terminal to get a copy of this template.
+### Premium Partners
 
-2 - After the files have been downloaded you will get a folder with all the required files
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-3 - You can install all the dependencies in the template by running the command npm install. All the required files are in the node modules.
+## Contributing
 
-4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-5 - Now that your project has now kick-started, all you need to do now is to code, code, and code to your heart's content.
+## Code of Conduct
 
-<h1>How to Contribute?:</h1>
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-We love your contributions and we welcome them wholeheartedly. We believe the more the merrier.
-To contribute make sure you have a Node.js and npm installed. Now run the command gulp --version. If the command returns with the Gulp version number, it means you have Gulp installed. If not you need to run the command npm install --global gulp-cli to install Gulp.
+## Security Vulnerabilities
 
-<h2>Next</h2>
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-After Gulp has been installed, follow the steps below to contribute.
-<br>
-1 - Fork and clone the repo of Corona Admin.
-<br>
-2 - Run the command npm install to install all the dependencies.
-<br>
-3 - Enter the command gulp serve. This will open Corona Admin in your default browser.
-<br>
-4 - Make your valuable contribution
-<br>
-5 - Submit a pull request.
+## License
 
-  <hr>
-	Do you need a template with more features and functionalities? Get more with our collection of the premium template with more plugins, eye catching animations, UI components, and sample pages all fitting together with a high-quality design.
-Visit
-  <a href="https://www.bootstrapdash.com" target="_blank">https://www.bootstrapdash.com</a> for more admin templates.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
