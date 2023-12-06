@@ -25,4 +25,4 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 
 Route::get('/register-certification', [registerCertificationController::class, 'index']);
 
-Rote::post('/register-certification', [registerCertificationController::class, 'store']);
+Route::post('/register-certification', [registerCertificationController::class, 'store']);
